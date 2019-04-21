@@ -1,2 +1,2 @@
-# Python_learning_notes
+
 记录自己的Python学习笔记
