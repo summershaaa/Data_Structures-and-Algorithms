@@ -11,7 +11,7 @@ class TreeLinkNode:
         self.val = x
         self.left = None
         self.right = None
-        self.next = None
+        self.next = None  #指向父亲节点
 class Solution:
     def GetNext(self, pNode):
         # write code here
