@@ -14,7 +14,7 @@ class TreeNode:
         self.right = right
 
 class Solution:
-    #递归方法  左根右
+    #递归方法  左右根
     def postorderTraverse1(self,root):
         if not root:
             return None 
@@ -39,9 +39,7 @@ class Solution:
                 stack.append(root.right)
         while rst:
             print(rst.pop(),end = ' ')
-            
-        
-        
+    
         
         #模拟先序遍历根左右，遍历顺序变为根右左，然后逆序输出
 #        if not root:
@@ -58,10 +56,6 @@ class Solution:
 #            print(i,end = ' ')
         
         
-        
-        
-            
-
 root = TreeNode(1,TreeNode(2,TreeNode(4),TreeNode(5)),TreeNode(3,TreeNode(6),TreeNode(7)))
 rst = Solution()
 print("递归后序")
